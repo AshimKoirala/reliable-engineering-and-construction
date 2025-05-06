@@ -26,7 +26,7 @@ export default function ServicesPage() {
       <section className="relative w-full h-[400px] flex items-center">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/placeholder.svg?height=400&width=1600"
+            src="/services.jpg?height=400&width=1600"
             alt="Engineering services"
             fill
             className="object-cover brightness-50"
@@ -89,9 +89,9 @@ export default function ServicesPage() {
                 </ul>
               </CardContent>
               <CardFooter>
-                <Link href="/services/construction-work" className="text-primary font-medium flex items-center">
+                {/* <Link href="/services/construction-work" className="text-primary font-medium flex items-center">
                   Learn More <ChevronRight className="ml-1 w-4 h-4" />
-                </Link>
+                </Link> */}
               </CardFooter>
             </Card>
 
@@ -127,9 +127,9 @@ export default function ServicesPage() {
                 </ul>
               </CardContent>
               <CardFooter>
-                <Link href="/services/2d-3d-design" className="text-primary font-medium flex items-center">
+                {/* <Link href="/services/2d-3d-design" className="text-primary font-medium flex items-center">
                   Learn More <ChevronRight className="ml-1 w-4 h-4" />
-                </Link>
+                </Link> */}
               </CardFooter>
             </Card>
 
@@ -165,9 +165,9 @@ export default function ServicesPage() {
                 </ul>
               </CardContent>
               <CardFooter>
-                <Link href="/services/architectural-structural" className="text-primary font-medium flex items-center">
+                {/* <Link href="/services/architectural-structural" className="text-primary font-medium flex items-center">
                   Learn More <ChevronRight className="ml-1 w-4 h-4" />
-                </Link>
+                </Link> */}
               </CardFooter>
             </Card>
 
@@ -203,9 +203,9 @@ export default function ServicesPage() {
                 </ul>
               </CardContent>
               <CardFooter>
-                <Link href="/services/renovation-remodeling" className="text-primary font-medium flex items-center">
+                {/* <Link href="/services/renovation-remodeling" className="text-primary font-medium flex items-center">
                   Learn More <ChevronRight className="ml-1 w-4 h-4" />
-                </Link>
+                </Link> */}
               </CardFooter>
             </Card>
 
@@ -241,9 +241,9 @@ export default function ServicesPage() {
                 </ul>
               </CardContent>
               <CardFooter>
-                <Link href="/services/site-supervision" className="text-primary font-medium flex items-center">
+                {/* <Link href="/services/site-supervision" className="text-primary font-medium flex items-center">
                   Learn More <ChevronRight className="ml-1 w-4 h-4" />
-                </Link>
+                </Link> */}
               </CardFooter>
             </Card>
 
@@ -279,9 +279,9 @@ export default function ServicesPage() {
                 </ul>
               </CardContent>
               <CardFooter>
-                <Link href="/services/interior-exterior" className="text-primary font-medium flex items-center">
+                {/* <Link href="/services/interior-exterior" className="text-primary font-medium flex items-center">
                   Learn More <ChevronRight className="ml-1 w-4 h-4" />
-                </Link>
+                </Link> */}
               </CardFooter>
             </Card>
 
@@ -317,9 +317,9 @@ export default function ServicesPage() {
                 </ul>
               </CardContent>
               <CardFooter>
-                <Link href="/services/civil-infrastructure" className="text-primary font-medium flex items-center">
+                {/* <Link href="/services/civil-infrastructure" className="text-primary font-medium flex items-center">
                   Learn More <ChevronRight className="ml-1 w-4 h-4" />
-                </Link>
+                </Link> */}
               </CardFooter>
             </Card>
 
@@ -355,9 +355,9 @@ export default function ServicesPage() {
                 </ul>
               </CardContent>
               <CardFooter>
-                <Link href="/services/electrical-mechanical" className="text-primary font-medium flex items-center">
+                {/* <Link href="/services/electrical-mechanical" className="text-primary font-medium flex items-center">
                   Learn More <ChevronRight className="ml-1 w-4 h-4" />
-                </Link>
+                </Link> */}
               </CardFooter>
             </Card>
 
@@ -393,9 +393,9 @@ export default function ServicesPage() {
                 </ul>
               </CardContent>
               <CardFooter>
-                <Link href="/services/structural-analysis" className="text-primary font-medium flex items-center">
+                {/* <Link href="/services/structural-analysis" className="text-primary font-medium flex items-center">
                   Learn More <ChevronRight className="ml-1 w-4 h-4" />
-                </Link>
+                </Link> */}
               </CardFooter>
             </Card>
 
@@ -431,9 +431,9 @@ export default function ServicesPage() {
                 </ul>
               </CardContent>
               <CardFooter>
-                <Link href="/services/smart-sustainable" className="text-primary font-medium flex items-center">
+                {/* <Link href="/services/smart-sustainable" className="text-primary font-medium flex items-center">
                   Learn More <ChevronRight className="ml-1 w-4 h-4" />
-                </Link>
+                </Link> */}
               </CardFooter>
             </Card>
 
@@ -469,12 +469,12 @@ export default function ServicesPage() {
                 </ul>
               </CardContent>
               <CardFooter>
-                <Link
+                {/* <Link
                   href="/services/post-construction-maintenance"
                   className="text-primary font-medium flex items-center"
                 >
                   Learn More <ChevronRight className="ml-1 w-4 h-4" />
-                </Link>
+                </Link> */}
               </CardFooter>
             </Card>
           </div>

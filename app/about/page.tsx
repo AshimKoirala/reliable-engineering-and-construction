@@ -10,7 +10,7 @@ export default function AboutPage() {
       <section className="relative w-full h-[400px] flex items-center">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/placeholder.svg?height=400&width=1600"
+            src="/about.jpg?height=400&width=1600"
             alt="Engineering team at work"
             fill
             className="object-cover brightness-50"
@@ -22,7 +22,7 @@ export default function AboutPage() {
             <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl text-white">
               About Reliable Engineering & Construction
             </h1>
-            <p className="text-xl text-gray-200">Building a legacy of excellence since 1998</p>
+            <p className="text-xl text-gray-200">Building trust</p>
           </div>
         </div>
       </section>
@@ -35,25 +35,24 @@ export default function AboutPage() {
               <h2 className="text-3xl font-bold tracking-tight mb-6 dark:text-white">Our Story</h2>
               <div className="w-20 h-1 bg-yellow-500 mb-6"></div>
               <p className="text-lg text-gray-700 dark:text-gray-300 mb-6">
-                Founded in 1998 by a team of visionary engineers, Reliable Engineering & Construction began as a small
-                consulting firm focused on structural engineering for residential projects. Over the past 25 years, we
-                have grown into a full-service engineering and construction company with a reputation for excellence
-                across the industry.
+                Reliable Engineering and Construction was founded with a clear mission: 
+                to deliver high-quality, dependable, and innovative engineering and construction solutions. 
+                Since our inception, we have built a reputation for excellence through our commitment to precision, 
+                safety, and client satisfaction.
               </p>
               <p className="text-lg text-gray-700 dark:text-gray-300 mb-6">
-                Our journey has been marked by a commitment to innovation, quality, and client satisfaction. From our
-                humble beginnings, we have expanded our services to include civil engineering, construction management,
-                and specialized technical consulting for complex infrastructure projects.
+                Our team of experienced engineers, architects, and project managers work 
+                collaboratively to bring each project to life—on time and within budget. 
+                Whether it's residential, commercial, or infrastructure development, 
+                we take pride in delivering results that stand the test of time.
               </p>
               <p className="text-lg text-gray-700 dark:text-gray-300">
-                Today, with offices in major cities across the country and a team of over 200 professionals, we continue
-                to build on our legacy while embracing new technologies and methodologies that advance the field of
-                engineering and construction.
+               At Reliable Engineering and Construction, we don’t just build structures—we build trust.
               </p>
             </div>
             <div className="relative h-[500px] rounded-lg overflow-hidden shadow-xl">
               <Image
-                src="/placeholder.svg?height=500&width=600"
+                src="/2dlogo.png?height=500&width=600"
                 alt="Company history timeline"
                 fill
                 className="object-cover"
@@ -165,42 +164,30 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-lg">
               <div className="relative h-80 rounded-lg overflow-hidden mb-4">
-                <Image src="/placeholder.svg?height=320&width=280" alt="CEO portrait" fill className="object-cover" />
+                <Image src="/manojkryadav.jpg?height=320&width=280" alt="Co-Founder" fill className="object-cover" />
               </div>
-              <h3 className="text-xl font-bold mb-1 dark:text-white">Michael Johnson</h3>
-              <p className="text-blue-700 dark:text-blue-300 mb-4">Chief Executive Officer</p>
-              <p className="text-gray-700 dark:text-gray-300">
-                With over 30 years of experience in civil engineering and business leadership, Michael has led the
-                company through significant growth and expansion since 2005.
-              </p>
+              <h3 className="text-xl font-bold mb-1 dark:text-white">Er. Manoj Kumar Yadav</h3>
+              <p className="text-blue-700 dark:text-blue-300 mb-4">Co-Founder</p>
             </div>
 
             <div className="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-lg">
               <div className="relative h-80 rounded-lg overflow-hidden mb-4">
-                <Image src="/placeholder.svg?height=320&width=280" alt="CTO portrait" fill className="object-cover" />
+                <Image src="/mukeshyadav.jpeg?height=320&width=280" alt="IT Department" fill className="object-cover" />
               </div>
-              <h3 className="text-xl font-bold mb-1 dark:text-white">Sarah Chen</h3>
-              <p className="text-blue-700 dark:text-blue-300 mb-4">Chief Technical Officer</p>
-              <p className="text-gray-700 dark:text-gray-300">
-                A structural engineering expert with a PhD from MIT, Sarah oversees all technical operations and has
-                pioneered several innovative engineering methodologies.
-              </p>
+              <h3 className="text-xl font-bold mb-1 dark:text-white">Mukesh Yadav</h3>
+              <p className="text-blue-700 dark:text-blue-300 mb-4">IT Department</p>
             </div>
 
             <div className="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-lg">
               <div className="relative h-80 rounded-lg overflow-hidden mb-4">
-                <Image src="/placeholder.svg?height=320&width=280" alt="COO portrait" fill className="object-cover" />
+                <Image src="/artiyadav.jpeg?height=320&width=280" alt="Architect" fill className="object-cover" />
               </div>
-              <h3 className="text-xl font-bold mb-1 dark:text-white">Robert Martinez</h3>
-              <p className="text-blue-700 dark:text-blue-300 mb-4">Chief Operations Officer</p>
-              <p className="text-gray-700 dark:text-gray-300">
-                Robert brings 25 years of construction management experience, ensuring our projects are delivered on
-                time, within budget, and to the highest quality standards.
-              </p>
+              <h3 className="text-xl font-bold mb-1 dark:text-white">Ar. Arti Yadav</h3>
+              <p className="text-blue-700 dark:text-blue-300 mb-4">Architect</p>
             </div>
           </div>
 
-          <div className="flex justify-center mt-12">
+          {/* <div className="flex justify-center mt-12">
             <Button
               asChild
               variant="outline"
@@ -208,7 +195,7 @@ export default function AboutPage() {
             >
               <Link href="/about/team">View Full Team</Link>
             </Button>
-          </div>
+          </div> */}
         </div>
       </section>
 

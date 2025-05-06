@@ -2,6 +2,7 @@ import Link from "next/link"
 import { Building2, Facebook, Instagram, Linkedin, Mail, MapPin, Phone, Twitter } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
+import Image from "next/image"
 
 export default function Footer() {
   return (
@@ -10,12 +11,10 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
           <div>
             <Link href="/" className="flex items-center gap-2 mb-6">
-              <Building2 className="h-8 w-8 text-brand-teal" />
-              <span className="text-xl font-bold text-foreground">Reliable Engineering</span>
+              <span className="text-xl font-bold text-foreground">Reliable Engineering and Construction</span>
             </Link>
             <p className="mb-6">
-              Excellence in engineering and construction services for over 25 years. Building tomorrow's infrastructure
-              with integrity, innovation, and expertise.
+              Building tomorrow's infrastructure with integrity, innovation, and expertise.
             </p>
             <div className="flex space-x-4">
               <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors">
@@ -129,8 +128,9 @@ export default function Footer() {
               </li>
               <li className="flex items-center">
                 <Mail className="h-5 w-5 mr-3 text-brand-teal" />
-                <a href="mailto:info@reliableengineering.com" className="hover:text-foreground transition-colors">
-                  info@reliableengineering.com
+                <a href="mailto:reliableconstruction023@gmail.com" className="hover:text-foreground transition-colors">
+                  reliableconstruction023
+                  @gmail.com
                 </a>
               </li>
             </ul>

@@ -14,7 +14,7 @@ export default function BlogPage() {
       <section className="relative w-full h-[300px] flex items-center">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/placeholder.svg?height=300&width=1600"
+            src="/blog.jpg?height=300&width=1600"
             alt="Blog"
             fill
             className="object-cover brightness-50"

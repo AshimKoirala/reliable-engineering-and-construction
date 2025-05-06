@@ -89,7 +89,7 @@ export default function ContactPage() {
       <section className="relative w-full h-[300px] flex items-center">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/placeholder.svg?height=300&width=1600"
+            src="/contact.png?height=300&width=1600"
             alt="Contact us"
             fill
             className="object-cover brightness-50"
@@ -107,46 +107,43 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Information */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-background">
         <div className="container px-4 md:px-6">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            <Card className="border-none shadow-lg">
+            <Card className="border-border bg-card shadow-md">
               <CardContent className="p-6 flex flex-col items-center text-center">
-                <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mb-4">
-                  <Phone className="w-6 h-6 text-blue-700" />
+                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+                  <Phone className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold mb-2">Phone</h3>
-                <p className="text-gray-700 mb-2">Main Office</p>
-                <a href="tel:+18005551234" className="text-blue-700 font-medium">
-                  (800) 555-1234
+                <h3 className="text-xl font-bold mb-2 text-foreground">Phone</h3>
+                <a href="tel:+977 9812340170" className="text-primary font-medium hover:underline">
+                  +977 9812340170
                 </a>
               </CardContent>
             </Card>
 
-            <Card className="border-none shadow-lg">
+            <Card className="border-border bg-card shadow-md">
               <CardContent className="p-6 flex flex-col items-center text-center">
-                <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mb-4">
-                  <Mail className="w-6 h-6 text-blue-700" />
+                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+                  <Mail className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold mb-2">Email</h3>
-                <p className="text-gray-700 mb-2">Customer Support</p>
-                <a href="mailto:info@reliableengineering.com" className="text-blue-700 font-medium">
-                  info@reliableengineering.com
+                <h3 className="text-xl font-bold mb-2 text-foreground">Email</h3>
+                <a href="mailto:reliableconstruction023@gmail.com" className="text-primary font-medium hover:underline">
+                  reliableconstruction023@gmail.com
                 </a>
               </CardContent>
             </Card>
 
-            <Card className="border-none shadow-lg">
+            <Card className="border-border bg-card shadow-md">
               <CardContent className="p-6 flex flex-col items-center text-center">
-                <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mb-4">
-                  <MapPin className="w-6 h-6 text-blue-700" />
+                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+                  <MapPin className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold mb-2">Location</h3>
-                <p className="text-gray-700 mb-2">Headquarters</p>
-                <address className="text-blue-700 font-medium not-italic">
-                  123 Engineering Blvd
+                <h3 className="text-xl font-bold mb-2 text-foreground">Location</h3>
+                <address className="text-primary font-medium not-italic">
+                  Jadibutti, Koteshwor - 32
                   <br />
-                  Chicago, IL 60601
+                  Kathmandu
                 </address>
               </CardContent>
             </Card>
@@ -155,13 +152,13 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Form & Map */}
-      <section className="py-16 bg-gray-100">
+      <section className="py-16 bg-muted/50">
         <div className="container px-4 md:px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div>
-              <h2 className="text-3xl font-bold tracking-tight mb-6">Get in Touch</h2>
-              <div className="w-20 h-1 bg-yellow-500 mb-6"></div>
-              <p className="text-gray-700 mb-8">
+              <h2 className="text-3xl font-bold tracking-tight mb-6 text-foreground">Get in Touch</h2>
+              <div className="w-20 h-1 bg-accent mb-6"></div>
+              <p className="text-muted-foreground mb-8">
                 Fill out the form below to request a consultation, ask a question, or provide feedback. Our team will
                 get back to you as soon as possible.
               </p>
@@ -169,64 +166,74 @@ export default function ContactPage() {
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-2">
-                    <Label htmlFor="name">Full Name</Label>
+                    <Label htmlFor="name" className="text-foreground">
+                      Full Name
+                    </Label>
                     <Input
                       id="name"
                       name="name"
                       value={formData.name}
                       onChange={handleChange}
-                      placeholder="John Doe"
                       required
+                      className="bg-background border-input"
                     />
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="email">Email Address</Label>
+                    <Label htmlFor="email" className="text-foreground">
+                      Email Address
+                    </Label>
                     <Input
                       id="email"
                       name="email"
                       type="email"
                       value={formData.email}
                       onChange={handleChange}
-                      placeholder="john@example.com"
                       required
+                      className="bg-background border-input"
                     />
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="phone">Phone Number</Label>
+                    <Label htmlFor="phone" className="text-foreground">
+                      Phone Number
+                    </Label>
                     <Input
                       id="phone"
                       name="phone"
                       type="tel"
                       value={formData.phone}
                       onChange={handleChange}
-                      placeholder="(123) 456-7890"
+                      className="bg-background border-input"
                     />
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="company">Company Name</Label>
+                    <Label htmlFor="company" className="text-foreground">
+                      Company Name
+                    </Label>
                     <Input
                       id="company"
                       name="company"
                       value={formData.company}
                       onChange={handleChange}
-                      placeholder="Acme Inc."
+                      className="bg-background border-input"
                     />
                   </div>
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="projectType">Project Type</Label>
+                  <Label htmlFor="projectType" className="text-foreground">
+                    Project Type
+                  </Label>
                   <Select
                     onValueChange={(value) => handleSelectChange("projectType", value)}
                     value={formData.projectType}
                   >
-                    <SelectTrigger id="projectType">
+                    <SelectTrigger id="projectType" className="bg-background border-input">
                       <SelectValue placeholder="Select project type" />
                     </SelectTrigger>
-                    <SelectContent>
+                    <SelectContent className="bg-background border-input">
                       <SelectItem value="commercial">Commercial Construction</SelectItem>
                       <SelectItem value="residential">Residential Construction</SelectItem>
                       <SelectItem value="industrial">Industrial Projects</SelectItem>
@@ -239,12 +246,14 @@ export default function ContactPage() {
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="budget">Estimated Budget</Label>
+                  <Label htmlFor="budget" className="text-foreground">
+                    Estimated Budget
+                  </Label>
                   <Select onValueChange={(value) => handleSelectChange("budget", value)} value={formData.budget}>
-                    <SelectTrigger id="budget">
+                    <SelectTrigger id="budget" className="bg-background border-input">
                       <SelectValue placeholder="Select budget range" />
                     </SelectTrigger>
-                    <SelectContent>
+                    <SelectContent className="bg-background border-input">
                       <SelectItem value="under100k">Under $100,000</SelectItem>
                       <SelectItem value="100k-500k">$100,000 - $500,000</SelectItem>
                       <SelectItem value="500k-1m">$500,000 - $1 million</SelectItem>
@@ -257,7 +266,9 @@ export default function ContactPage() {
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="message">Project Details</Label>
+                  <Label htmlFor="message" className="text-foreground">
+                    Project Details
+                  </Label>
                   <Textarea
                     id="message"
                     name="message"
@@ -266,11 +277,12 @@ export default function ContactPage() {
                     placeholder="Please provide details about your project or inquiry..."
                     rows={5}
                     required
+                    className="bg-background border-input"
                   />
                 </div>
 
                 <div className="space-y-2">
-                  <Label>Preferred Contact Method</Label>
+                  <Label className="text-foreground">Preferred Contact Method</Label>
                   <RadioGroup
                     defaultValue="email"
                     value={formData.preferredContact}
@@ -279,18 +291,22 @@ export default function ContactPage() {
                   >
                     <div className="flex items-center space-x-2">
                       <RadioGroupItem value="email" id="email-contact" />
-                      <Label htmlFor="email-contact">Email</Label>
+                      <Label htmlFor="email-contact" className="text-foreground">
+                        Email
+                      </Label>
                     </div>
                     <div className="flex items-center space-x-2">
                       <RadioGroupItem value="phone" id="phone-contact" />
-                      <Label htmlFor="phone-contact">Phone</Label>
+                      <Label htmlFor="phone-contact" className="text-foreground">
+                        Phone
+                      </Label>
                     </div>
                   </RadioGroup>
                 </div>
 
                 <Button
                   type="submit"
-                  className="bg-blue-700 hover:bg-blue-800 w-full md:w-auto"
+                  className="bg-primary hover:bg-primary/90 text-primary-foreground w-full md:w-auto"
                   disabled={isSubmitting}
                 >
                   {isSubmitting ? "Submitting..." : "Submit Inquiry"}
@@ -299,74 +315,20 @@ export default function ContactPage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl font-bold tracking-tight mb-6">Our Locations</h2>
-              <div className="w-20 h-1 bg-yellow-500 mb-6"></div>
+              <h2 className="text-3xl font-bold tracking-tight mb-6 text-foreground">Our Locations</h2>
+              <div className="w-20 h-1 bg-accent mb-6"></div>
 
-              <div className="relative h-[400px] rounded-lg overflow-hidden shadow-lg">
-                <Image
-                  src="/placeholder.svg?height=400&width=600"
-                  alt="Office location map"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                  <h3 className="text-xl font-bold mb-2 flex items-center">
-                    <Building2 className="w-5 h-5 mr-2 text-blue-700" />
-                    Headquarters
-                  </h3>
-                  <address className="text-gray-700 not-italic">
-                    123 Engineering Blvd
-                    <br />
-                    Chicago, IL 60601
-                    <br />
-                    (800) 555-1234
-                  </address>
-                </div>
-
-                <div>
-                  <h3 className="text-xl font-bold mb-2 flex items-center">
-                    <Building2 className="w-5 h-5 mr-2 text-blue-700" />
-                    East Coast Office
-                  </h3>
-                  <address className="text-gray-700 not-italic">
-                    456 Construction Ave
-                    <br />
-                    New York, NY 10001
-                    <br />
-                    (800) 555-5678
-                  </address>
-                </div>
-
-                <div>
-                  <h3 className="text-xl font-bold mb-2 flex items-center">
-                    <Building2 className="w-5 h-5 mr-2 text-blue-700" />
-                    West Coast Office
-                  </h3>
-                  <address className="text-gray-700 not-italic">
-                    789 Pacific Blvd
-                    <br />
-                    San Francisco, CA 94105
-                    <br />
-                    (800) 555-9012
-                  </address>
-                </div>
-
-                <div>
-                  <h3 className="text-xl font-bold mb-2 flex items-center">
-                    <Building2 className="w-5 h-5 mr-2 text-blue-700" />
-                    Southern Office
-                  </h3>
-                  <address className="text-gray-700 not-italic">
-                    321 Sunshine Way
-                    <br />
-                    Miami, FL 33101
-                    <br />
-                    (800) 555-3456
-                  </address>
-                </div>
+              <div className="relative h-[400px] rounded-lg overflow-hidden shadow-md border border-border">
+                <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.483308343557!2d85.34823871172284!3d27.671453426973137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x66a812ee85bb7ebd%3A0x604b8d43da7dcd9d!2sReliable%20engineering%20%26%20construction!5e0!3m2!1sen!2snp!4v1746522402024!5m2!1sen!2snp" 
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="absolute inset-0"
+              ></iframe>
               </div>
             </div>
           </div>
@@ -374,60 +336,62 @@ export default function ContactPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-background">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center text-center mb-12">
-            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Frequently Asked Questions</h2>
-            <div className="w-20 h-1 bg-yellow-500 my-4"></div>
-            <p className="text-xl text-gray-600 max-w-3xl">
+            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-foreground">
+              Frequently Asked Questions
+            </h2>
+            <div className="w-20 h-1 bg-accent my-4"></div>
+            <p className="text-xl text-muted-foreground max-w-3xl">
               Find answers to common questions about our services and processes
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <div className="space-y-2">
-              <h3 className="text-xl font-bold">What areas do you serve?</h3>
-              <p className="text-gray-700">
+            <div className="space-y-2 p-6 rounded-lg bg-card border border-border shadow-sm">
+              <h3 className="text-xl font-bold text-foreground">What areas do you serve?</h3>
+              <p className="text-muted-foreground">
                 We provide engineering and construction services nationwide, with offices in Chicago, New York, San
                 Francisco, and Miami. We also undertake select international projects.
               </p>
             </div>
 
-            <div className="space-y-2">
-              <h3 className="text-xl font-bold">How do I request a quote?</h3>
-              <p className="text-gray-700">
+            <div className="space-y-2 p-6 rounded-lg bg-card border border-border shadow-sm">
+              <h3 className="text-xl font-bold text-foreground">How do I request a quote?</h3>
+              <p className="text-muted-foreground">
                 You can request a quote by filling out our contact form, calling our main office, or emailing us with
                 details about your project. We'll respond within 1-2 business days.
               </p>
             </div>
 
-            <div className="space-y-2">
-              <h3 className="text-xl font-bold">What information do you need for an estimate?</h3>
-              <p className="text-gray-700">
+            <div className="space-y-2 p-6 rounded-lg bg-card border border-border shadow-sm">
+              <h3 className="text-xl font-bold text-foreground">What information do you need for an estimate?</h3>
+              <p className="text-muted-foreground">
                 To provide an accurate estimate, we typically need project location, scope, timeline, any existing plans
                 or specifications, and budget constraints. The more details you can provide, the better.
               </p>
             </div>
 
-            <div className="space-y-2">
-              <h3 className="text-xl font-bold">Do you offer design-build services?</h3>
-              <p className="text-gray-700">
+            <div className="space-y-2 p-6 rounded-lg bg-card border border-border shadow-sm">
+              <h3 className="text-xl font-bold text-foreground">Do you offer design-build services?</h3>
+              <p className="text-muted-foreground">
                 Yes, we offer comprehensive design-build services that streamline the project delivery process by
                 combining design and construction under a single contract and team.
               </p>
             </div>
 
-            <div className="space-y-2">
-              <h3 className="text-xl font-bold">What types of projects do you handle?</h3>
-              <p className="text-gray-700">
+            <div className="space-y-2 p-6 rounded-lg bg-card border border-border shadow-sm">
+              <h3 className="text-xl font-bold text-foreground">What types of projects do you handle?</h3>
+              <p className="text-muted-foreground">
                 We handle a wide range of projects including commercial buildings, residential developments, industrial
                 facilities, infrastructure projects, renovations, and specialized engineering consulting.
               </p>
             </div>
 
-            <div className="space-y-2">
-              <h3 className="text-xl font-bold">Are you licensed and insured?</h3>
-              <p className="text-gray-700">
+            <div className="space-y-2 p-6 rounded-lg bg-card border border-border shadow-sm">
+              <h3 className="text-xl font-bold text-foreground">Are you licensed and insured?</h3>
+              <p className="text-muted-foreground">
                 Yes, we are fully licensed, bonded, and insured in all states where we operate. We maintain professional
                 liability insurance, general liability insurance, and workers' compensation coverage.
               </p>

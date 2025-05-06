@@ -108,7 +108,7 @@ export default function Home() {
       </section>
 
       {/* Featured Projects */}
-      <section className="py-16 bg-background">
+      {/* <section className="py-16 bg-background">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center text-center mb-12">
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl text-foreground">
@@ -128,7 +128,7 @@ export default function Home() {
             </Button>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Blog Section */}
       <section className="py-16 bg-secondary">

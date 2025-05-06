@@ -7,15 +7,15 @@ export default function StatsCounter() {
   const [counts, setCounts] = useState({
     years: 0,
     projects: 0,
-    clients: 0,
-    awards: 0,
+    // clients: 0,
+    // awards: 0,
   })
 
   const targets = {
-    years: 25,
-    projects: 500,
-    clients: 350,
-    awards: 45,
+    years: 2,
+    projects: 10,
+    // clients: 350,
+    // awards: 45,
   }
 
   useEffect(() => {
@@ -39,8 +39,8 @@ export default function StatsCounter() {
       setCounts({
         years: Math.floor(progress * targets.years),
         projects: Math.floor(progress * targets.projects),
-        clients: Math.floor(progress * targets.clients),
-        awards: Math.floor(progress * targets.awards),
+        // clients: Math.floor(progress * targets.clients),
+        // awards: Math.floor(progress * targets.awards),
       })
     }, stepTime)
 
@@ -48,7 +48,8 @@ export default function StatsCounter() {
   }, [])
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+    // <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
       <div className="bg-background p-8 rounded-lg shadow-lg flex flex-col items-center text-center">
         <Calendar className="h-12 w-12 text-brand-teal mb-4" />
         <div className="text-4xl font-bold text-brand-teal mb-2">{counts.years}+</div>
@@ -61,7 +62,7 @@ export default function StatsCounter() {
         <h3 className="text-xl font-medium text-foreground">Projects Completed</h3>
       </div>
 
-      <div className="bg-background p-8 rounded-lg shadow-lg flex flex-col items-center text-center">
+      {/* <div className="bg-background p-8 rounded-lg shadow-lg flex flex-col items-center text-center">
         <Users className="h-12 w-12 text-brand-teal mb-4" />
         <div className="text-4xl font-bold text-brand-teal mb-2">{counts.clients}+</div>
         <h3 className="text-xl font-medium text-foreground">Satisfied Clients</h3>
@@ -71,7 +72,7 @@ export default function StatsCounter() {
         <Award className="h-12 w-12 text-brand-teal mb-4" />
         <div className="text-4xl font-bold text-brand-teal mb-2">{counts.awards}</div>
         <h3 className="text-xl font-medium text-foreground">Industry Awards</h3>
-      </div>
+      </div> */}
     </div>
   )
 }

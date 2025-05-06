@@ -394,7 +394,7 @@ export default function ProjectsPage() {
             {/* Other category tabs would follow the same pattern */}
           </Tabs>
 
-          <div className="flex justify-center mt-12">
+          {/* <div className="flex justify-center mt-12">
             <Button
               asChild
               variant="outline"
@@ -402,12 +402,12 @@ export default function ProjectsPage() {
             >
               <Link href="/projects/archive">View Project Archive</Link>
             </Button>
-          </div>
+          </div> */}
         </div>
       </section>
 
       {/* Project Stats */}
-      <section className="py-16 bg-gray-100 dark:bg-gray-900">
+      {/* <section className="py-16 bg-gray-100 dark:bg-gray-900">
         <div className="container px-4 md:px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
             <div className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg dark:shadow-gray-900/30">
@@ -431,7 +431,7 @@ export default function ProjectsPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section className="py-16 bg-blue-900 dark:bg-blue-950 text-white">
