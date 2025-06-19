@@ -145,7 +145,7 @@ export default function Footer() {
 
         <div className="border-t border-border mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p>&copy; {new Date().getFullYear()} Reliable Engineering & Construction. All rights reserved.</p>
-          <div className="flex gap-6 mt-4 md:mt-0">
+          {/* <div className="flex gap-6 mt-4 md:mt-0">
             <Link href="/privacy-policy" className="text-sm hover:text-foreground transition-colors">
               Privacy Policy
             </Link>
@@ -155,8 +155,8 @@ export default function Footer() {
             <Link href="/sitemap" className="text-sm hover:text-foreground transition-colors">
               Sitemap
             </Link>
-          </div>
-          <Link href="https://www.motionage.com/" className="text-sm hover:text-foreground transition-colors">🛠️ Developed by Motion Age</Link>
+          </div> */}
+          <Link href="https://www.motionage.com/" target="_blank" className="text-sm hover:text-foreground transition-colors">🛠️ Developed by Motion Age</Link>
         </div>
       </div>
     </footer>

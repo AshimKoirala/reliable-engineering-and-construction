@@ -34,18 +34,18 @@ const carouselSlides: CarouselSlide[] = [
     title: "Architectural & Structural Services",
     subtitle: "Design Excellence",
     description: "Comprehensive architectural design and structural engineering for aesthetic appeal and integrity.",
-    image: "/placeholder.svg?height=800&width=1600",
+    image: "/architect.jpg?height=800&width=1600",
     ctaText: "Learn More",
-    ctaLink: "/services/architectural-structural",
+    ctaLink: "/services",
   },
   {
     id: 3,
     title: "2D-3D Design Services",
     subtitle: "Visualize Your Project",
     description: "Professional 2D drafting and 3D modeling to bring your vision to life before construction begins.",
-    image: "/placeholder.svg?height=800&width=1600",
+    image: "/3dmodel.jpg?height=800&width=1600",
     ctaText: "Explore Designs",
-    ctaLink: "/services/2d-3d-design",
+    ctaLink: "/services",
   },
   {
     id: 4,
@@ -53,43 +53,43 @@ const carouselSlides: CarouselSlide[] = [
     subtitle: "Eco-Friendly Building Practices",
     description:
       "Creating environmentally responsible structures with minimal carbon footprint and maximum efficiency.",
-    image: "/placeholder.svg?height=800&width=1600",
+    image: "/ecohouse.jpg?height=800&width=1600",
     ctaText: "Green Solutions",
-    ctaLink: "/services/smart-sustainable",
+    ctaLink: "/services",
   },
   {
     id: 5,
     title: "Renovation & Remodeling",
     subtitle: "Transform Your Space",
     description: "Expert renovation services to modernize and enhance existing residential and commercial spaces.",
-    image: "/placeholder.svg?height=800&width=1600",
+    image: "/renovation.jpg?height=800&width=1600",
     ctaText: "View Projects",
-    ctaLink: "/services/renovation-remodeling",
+    ctaLink: "/services",
   },
-  {
-    id: 6,
-    title: "Civil & Infrastructure Development",
-    subtitle: "Building Foundations",
-    description: "Comprehensive infrastructure solutions including roads, bridges, and water management systems.",
-    image: "/placeholder.svg?height=800&width=1600",
-    ctaText: "Discover More",
-    ctaLink: "/services/civil-infrastructure",
-  },
-  {
-    id: 7,
-    title: "Electrical & Mechanical Services",
-    subtitle: "Powering Your Projects",
-    description: "Specialized electrical and mechanical engineering for optimal building performance and efficiency.",
-    image: "/placeholder.svg?height=800&width=1600",
-    ctaText: "Our Expertise",
-    ctaLink: "/services/electrical-mechanical",
-  },
+  // {
+  //   id: 6,
+  //   title: "Civil & Infrastructure Development",
+  //   subtitle: "Building Foundations",
+  //   description: "Comprehensive infrastructure solutions including roads, bridges, and water management systems.",
+  //   image: "/placeholder.svg?height=800&width=1600",
+  //   ctaText: "Discover More",
+  //   ctaLink: "/services",
+  // },
+  // {
+  //   id: 7,
+  //   title: "Electrical & Mechanical Services",
+  //   subtitle: "Powering Your Projects",
+  //   description: "Specialized electrical and mechanical engineering for optimal building performance and efficiency.",
+  //   image: "/placeholder.svg?height=800&width=1600",
+  //   ctaText: "Our Expertise",
+  //   ctaLink: "/services/electrical-mechanical",
+  // },
   {
     id: 8,
     title: "Join Our Team",
     subtitle: "Career Opportunities",
     description: "We're looking for talented professionals to help build the future of construction and engineering.",
-    image: "/placeholder.svg?height=800&width=1600",
+    image: "/career.jpg?height=800&width=1600",
     ctaText: "View Careers",
     ctaLink: "/careers",
   },
@@ -150,7 +150,7 @@ export default function LandingCarousel({ autoPlayInterval = 5000, className }: 
       aria-label="Project highlights carousel"
     >
       {/* Slides container */}
-      <div className="relative h-[600px] md:h-[700px]">
+      <div className="relative h-[400px] md:h-[450px]">
         {carouselSlides.map((slide, index) => (
           <div
             key={slide.id}
